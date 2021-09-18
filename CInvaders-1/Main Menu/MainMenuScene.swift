@@ -8,7 +8,7 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene {
+class MainMenuScene: SKScene {
 
     
     override func didMove(to view: SKView) {

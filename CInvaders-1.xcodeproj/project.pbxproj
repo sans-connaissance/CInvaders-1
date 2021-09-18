@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		419C0F7726F6275000F549B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419C0F7626F6275000F549B8 /* AppDelegate.swift */; };
-		419C0F7926F6275000F549B8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 419C0F7826F6275000F549B8 /* GameScene.sks */; };
+		419C0F7926F6275000F549B8 /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 419C0F7826F6275000F549B8 /* MainMenuScene.sks */; };
 		419C0F7B26F6275000F549B8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 419C0F7A26F6275000F549B8 /* Actions.sks */; };
-		419C0F7D26F6275000F549B8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419C0F7C26F6275000F549B8 /* GameScene.swift */; };
+		419C0F7D26F6275000F549B8 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419C0F7C26F6275000F549B8 /* MainMenuScene.swift */; };
 		419C0F7F26F6275000F549B8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419C0F7E26F6275000F549B8 /* GameViewController.swift */; };
 		419C0F8226F6275000F549B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419C0F8026F6275000F549B8 /* Main.storyboard */; };
 		419C0F8426F6275100F549B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419C0F8326F6275100F549B8 /* Assets.xcassets */; };
@@ -23,9 +23,9 @@
 /* Begin PBXFileReference section */
 		419C0F7326F6275000F549B8 /* CInvaders-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CInvaders-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		419C0F7626F6275000F549B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		419C0F7826F6275000F549B8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		419C0F7826F6275000F549B8 /* MainMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuScene.sks; sourceTree = "<group>"; };
 		419C0F7A26F6275000F549B8 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		419C0F7C26F6275000F549B8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		419C0F7C26F6275000F549B8 /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
 		419C0F7E26F6275000F549B8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		419C0F8126F6275000F549B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		419C0F8326F6275100F549B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,8 +109,8 @@
 		419C0F8E26F628B000F549B8 /* Main Menu */ = {
 			isa = PBXGroup;
 			children = (
-				419C0F7826F6275000F549B8 /* GameScene.sks */,
-				419C0F7C26F6275000F549B8 /* GameScene.swift */,
+				419C0F7826F6275000F549B8 /* MainMenuScene.sks */,
+				419C0F7C26F6275000F549B8 /* MainMenuScene.swift */,
 			);
 			path = "Main Menu";
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				419C0F8226F6275000F549B8 /* Main.storyboard in Resources */,
-				419C0F7926F6275000F549B8 /* GameScene.sks in Resources */,
+				419C0F7926F6275000F549B8 /* MainMenuScene.sks in Resources */,
 				419C0F8426F6275100F549B8 /* Assets.xcassets in Resources */,
 				419C0F7B26F6275000F549B8 /* Actions.sks in Resources */,
 			);
@@ -193,7 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				419C0F7D26F6275000F549B8 /* GameScene.swift in Sources */,
+				419C0F7D26F6275000F549B8 /* MainMenuScene.swift in Sources */,
 				419C0F7F26F6275000F549B8 /* GameViewController.swift in Sources */,
 				419C0F9426F6299900F549B8 /* SceneManager.swift in Sources */,
 				419C0F9726F6299900F549B8 /* TouchActions.swift in Sources */,

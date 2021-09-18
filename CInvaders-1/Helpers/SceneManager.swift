@@ -38,7 +38,7 @@ extension SKScene {
         case SceneType.OptionsScene:
             return OptionsScene(fileNamed: "OptionsScene")
         case SceneType.GameScene:
-            return GameScene(fileNamed: "GameScene")
+            return MainMenuScene(fileNamed: "GameScene")
         }
     }
 }
