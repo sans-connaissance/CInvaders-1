@@ -14,7 +14,7 @@ extension SKScene {
     
     
     enum SceneType {
-        case MenuScene, OptionsScene, GameScene
+        case MainMenuScene, LevelOneScene
     }
     
     func transition(_ fromScene: SKScene, toScene: SceneType, transition: SKTransition? = nil ) {
@@ -33,12 +33,10 @@ extension SKScene {
     
     func getScene(_ sceneType: SceneType) -> SKScene? {
         switch sceneType {
-        case SceneType.MenuScene:
-            return MenuScene(fileNamed: "MenuScene")
-        case SceneType.OptionsScene:
-            return OptionsScene(fileNamed: "OptionsScene")
-        case SceneType.GameScene:
-            return MainMenuScene(fileNamed: "GameScene")
+        case SceneType.MainMenuScene:
+            return MainMenuScene(fileNamed: "MainMenuScene")
+        case SceneType.LevelOneScene:
+            return MainMenuScene(fileNamed: "LevelOneScene")
         }
     }
 }
