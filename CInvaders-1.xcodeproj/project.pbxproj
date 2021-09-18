@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		411C2B9A26F63CAC0068165E /* LevelOneScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 411C2B9926F63CAC0068165E /* LevelOneScene.sks */; };
 		411C2B9C26F63CDB0068165E /* LevelOneScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2B9B26F63CDB0068165E /* LevelOneScene.swift */; };
+		411C2B9E26F658050068165E /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2B9D26F658050068165E /* EntityManager.swift */; };
+		411C2BA026F658B10068165E /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2B9F26F658B10068165E /* SpriteComponent.swift */; };
+		411C2BA226F6592C0068165E /* BasicEnemyMoveComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2BA126F6592C0068165E /* BasicEnemyMoveComponent.swift */; };
+		411C2BA626F6AF0F0068165E /* BasicEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C2BA526F6AF0F0068165E /* BasicEnemy.swift */; };
 		419C0F7726F6275000F549B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419C0F7626F6275000F549B8 /* AppDelegate.swift */; };
 		419C0F7926F6275000F549B8 /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 419C0F7826F6275000F549B8 /* MainMenuScene.sks */; };
 		419C0F7B26F6275000F549B8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 419C0F7A26F6275000F549B8 /* Actions.sks */; };
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		411C2B9926F63CAC0068165E /* LevelOneScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelOneScene.sks; sourceTree = "<group>"; };
 		411C2B9B26F63CDB0068165E /* LevelOneScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelOneScene.swift; sourceTree = "<group>"; };
+		411C2B9D26F658050068165E /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		411C2B9F26F658B10068165E /* SpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
+		411C2BA126F6592C0068165E /* BasicEnemyMoveComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicEnemyMoveComponent.swift; sourceTree = "<group>"; };
+		411C2BA526F6AF0F0068165E /* BasicEnemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicEnemy.swift; sourceTree = "<group>"; };
 		419C0F7326F6275000F549B8 /* CInvaders-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CInvaders-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		419C0F7626F6275000F549B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		419C0F7826F6275000F549B8 /* MainMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuScene.sks; sourceTree = "<group>"; };
@@ -88,6 +96,8 @@
 		419C0F8B26F627E000F549B8 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				411C2B9D26F658050068165E /* EntityManager.swift */,
+				411C2BA526F6AF0F0068165E /* BasicEnemy.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -95,6 +105,8 @@
 		419C0F8C26F6287900F549B8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				411C2B9F26F658B10068165E /* SpriteComponent.swift */,
+				411C2BA126F6592C0068165E /* BasicEnemyMoveComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -202,12 +214,16 @@
 			files = (
 				419C0F7D26F6275000F549B8 /* MainMenuScene.swift in Sources */,
 				419C0F7F26F6275000F549B8 /* GameViewController.swift in Sources */,
+				411C2B9E26F658050068165E /* EntityManager.swift in Sources */,
 				419C0F9426F6299900F549B8 /* SceneManager.swift in Sources */,
 				419C0F9726F6299900F549B8 /* TouchActions.swift in Sources */,
 				419C0F7726F6275000F549B8 /* AppDelegate.swift in Sources */,
+				411C2BA026F658B10068165E /* SpriteComponent.swift in Sources */,
 				419C0F9526F6299900F549B8 /* ButtonNode.swift in Sources */,
+				411C2BA226F6592C0068165E /* BasicEnemyMoveComponent.swift in Sources */,
 				411C2B9C26F63CDB0068165E /* LevelOneScene.swift in Sources */,
 				419C0F9626F6299900F549B8 /* SoundManager.swift in Sources */,
+				411C2BA626F6AF0F0068165E /* BasicEnemy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
