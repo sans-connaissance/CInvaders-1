@@ -10,14 +10,22 @@ import GameplayKit
 
 
 class BasicEnemyMoveComponent: GKAgent2D, GKAgentDelegate {
-   let entityManager: EntityManager
+   
+    let entityManager: EntityManager
     
-    init(entityManager: EntityManager) {
+    init(maxSpeed: Float, radius: Float, entityManager: EntityManager) {
         self.entityManager = entityManager
         super.init()
+        delegate = self
+        self.maxSpeed = maxSpeed
+        self.radius = radius
+        self.mass = 0.01
         
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+
+    
 }
