@@ -16,7 +16,7 @@ class EntityManager {
     
     lazy var componentSystems: [GKComponentSystem] = {
         let basicEnemyMoveSystem = GKComponentSystem(componentClass: BasicEnemyMoveComponent.self)
-
+        
         return [basicEnemyMoveSystem]
     }()
     
@@ -37,15 +37,24 @@ class EntityManager {
     }
     
     
-    func spawnBasicEnemy() {
-        let basicEnemy = BasicEnemy(entityManager: self)
-        if let spriteComponent = basicEnemy.component(ofType: SpriteComponent.self) {
-            spriteComponent.node.position = CGPoint(x: 0.0, y: 0.0)
-            spriteComponent.node.zPosition = 1
-        }
-        add(basicEnemy)
+    func spawnBasicEnemy(count: Int) {
+        var xSpacerArray = [Double]()
+        let xMultiplier = 50.0
+        var xSpacer = 0.0
         
+        for num in 0..<count {
+            xSpacer = xMultiplier * Double(num)
+            xSpacerArray.append(xSpacer)
+        }
+        print(xSpacerArray)
+        
+        for spacer in xSpacerArray {
+            let basicEnemy = BasicEnemy(entityManager: self)
+            if let spriteComponent = basicEnemy.component(ofType: SpriteComponent.self) {
+                spriteComponent.node.position = CGPoint(x: -100.0 + spacer, y: 0.0)
+                spriteComponent.node.zPosition = 1
+            }
+            add(basicEnemy)
+        }
     }
-    
-    
 }

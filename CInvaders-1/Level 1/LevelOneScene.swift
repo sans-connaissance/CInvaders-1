@@ -15,10 +15,12 @@ class LevelOneScene: SKScene {
     
     override func didMove(to view: SKView) {
         
-        //create entity and entity manager and actions... and see if you can add one enemy to the screen.
+
         
         entityManager = EntityManager(scene: self)
-        entityManager.spawnBasicEnemy()
+        
+        //add a "position" parameter to the spawnBasicEnemy function
+        entityManager.spawnBasicEnemy(count: 5)
     }
     
     
