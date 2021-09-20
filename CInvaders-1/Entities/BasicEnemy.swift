@@ -10,25 +10,13 @@ import GameplayKit
 
 class BasicEnemy: GKEntity {
     
-    enum BasicEnemyType {
-        case a
-        case b
-        case c
-        
-        static var size: CGSize {
-            return CGSize(width: 24, height: 16)
-        }
-        
-        static var name: String {
-            return "BasicEnemy"
-        }
-    }
+
     
     init (entityManager: EntityManager ) {
         super.init()
         
         // this is where you assign a texture, perhaps from the enums below
-        
+        //the texture file name here should be in the component.
         let texture = SKTexture(imageNamed: "InvaderA_00")
         let spriteComponent = SpriteComponent(texture: texture)
         spriteComponent.node.name = "BasicEnemy"
@@ -79,5 +67,21 @@ class BasicEnemy: GKEntity {
               SKTexture(imageNamed: String(format: "%@_01.png", prefix))]
     }
  
+    
+    
+    enum BasicEnemyType {
+        
+        case a
+        case b
+        case c
+        
+        static var size: CGSize {
+            return CGSize(width: 24, height: 16)
+        }
+        
+        static var name: String {
+            return "BasicEnemy"
+        }
+    }
     
 }
